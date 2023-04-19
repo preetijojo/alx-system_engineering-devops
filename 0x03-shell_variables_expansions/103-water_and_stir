@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(echo $WATER $STIR | tr a-z A-Z | tr ' ' '+' | bc) | tr 0-9A-Z bestchol
+echo $[$WATER + $STIR] | tr '[:lower:]' '[:upper:]'
